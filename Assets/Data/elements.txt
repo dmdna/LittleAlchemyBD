@@ -1,0 +1,8 @@
+id,imagePath
+fire,Sprites/fire
+water,Sprites/water
+earth,Sprites/earth
+air,Sprites/air
+steam,Sprites/steam
+mud,Sprites/mud
+lava,Sprites/lava

@@ -1,0 +1,4 @@
+inputA,inputB,output
+fire,water,steam
+water,earth,mud
+fire,earth,lava
