@@ -16,6 +16,7 @@ public class PlayfieldDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        SFXManager.Instance.PlayPickup();
         canvasGroup.blocksRaycasts = false;
     }
 
@@ -26,6 +27,7 @@ public class PlayfieldDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        SFXManager.Instance.PlayDrop();
         canvasGroup.blocksRaycasts = true;
     }
 }

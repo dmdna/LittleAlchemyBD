@@ -18,6 +18,7 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     public void OnBeginDrag(PointerEventData eventData)
     {
         // Create a clone of this UI element for dragging
+        SFXManager.Instance.PlayPickup();
         dragClone = Instantiate(gameObject, canvas.transform);
         rectTransform = dragClone.GetComponent<RectTransform>();
         canvasGroup = dragClone.GetComponent<CanvasGroup>();
@@ -42,6 +43,7 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     {
         if (dragClone != null)
         {
+            SFXManager.Instance.PlayDrop();
             Destroy(dragClone); // always remove the temporary clone
         }
     }

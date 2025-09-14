@@ -17,4 +17,10 @@ public class ElementUI : MonoBehaviour
         icon.sprite = sprite;
         label.text = id;
     }
+
+
+    public void HoverSFX()
+    {
+        SFXManager.Instance.PlayHover();
+    }
 }

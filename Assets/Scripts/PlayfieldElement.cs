@@ -16,6 +16,11 @@ public class PlayfieldElement : MonoBehaviour, IDropHandler
         label.text = id;
     }
 
+    public void HoverSFX()
+    {
+        SFXManager.Instance.PlayHover();
+    }
+
     public string GetElementId()
     {
         return elementId;
@@ -45,6 +50,7 @@ public class PlayfieldElement : MonoBehaviour, IDropHandler
 
         if (resultId != null)
         {
+            SFXManager.Instance.PlayCombination();
             Element result = Registry.Instance.elements[resultId];
 
             // spawn new combined element

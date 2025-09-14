@@ -36,6 +36,7 @@ public class InventoryDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     {
         if (dragClone != null)
         {
+            SFXManager.Instance.PlayDrop();
             Destroy(dragClone); // clone is only temporary, DropZone will spawn the real PlayfieldElement
         }
     }

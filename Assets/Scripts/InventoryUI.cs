@@ -8,6 +8,14 @@ public class InventoryUI : MonoBehaviour
 
     private HashSet<string> unlockedElements = new HashSet<string>();
 
+    public delegate void ElementUnlocked(string id);
+    public event ElementUnlocked OnElementUnlocked;
+    
+    public HashSet<string> GetUnlockedElements()
+    {
+        return unlockedElements;
+    }
+
     public void AddElement(string id)
     {
         if (unlockedElements.Contains(id))
@@ -22,6 +30,8 @@ public class InventoryUI : MonoBehaviour
             ui.Setup(id, element.icon);
 
             unlockedElements.Add(id);
+
+            OnElementUnlocked?.Invoke(id);
         }
     }
 }
