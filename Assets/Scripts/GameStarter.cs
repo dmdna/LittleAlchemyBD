@@ -6,14 +6,23 @@ public class GameStarter : MonoBehaviour
 
     void Start()
     {
-        Invoke("StartGame", Time.deltaTime*2);
+        // Small delay before initializing the game
+        Invoke(nameof(StartGame), Time.deltaTime * 2);
     }
 
     void StartGame()
     {
-        inventory.AddElement("fire");
+        // Add base ingredients at the start
+        inventory.AddElement("beans");
+        inventory.AddElement("rice");
+        inventory.AddElement("tomato");
+        inventory.AddElement("onion");
+        inventory.AddElement("meat");
+        inventory.AddElement("avocado");
         inventory.AddElement("water");
-        inventory.AddElement("earth");
-        inventory.AddElement("air");
+        inventory.AddElement("wheat");
+        inventory.AddElement("egg");
+        inventory.AddElement("fire");
+        inventory.AddElement("milk");
     }
 }

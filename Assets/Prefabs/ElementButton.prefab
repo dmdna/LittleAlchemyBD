@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 856472471878171069}
   - component: {fileID: 1961220600413708373}
   - component: {fileID: 6245825256492629637}
+  - component: {fileID: 7164782032110329534}
   m_Layer: 5
   m_Name: ElementButton
   m_TagString: Untagged
@@ -183,6 +184,18 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &7164782032110329534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28573437505437631}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 174acf8a9dba37e428e3ba57bfb078d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8772879971663376218
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,8 +270,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

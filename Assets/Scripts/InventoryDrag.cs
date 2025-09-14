@@ -1,14 +1,12 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
-public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class InventoryDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     private Canvas canvas;
+    private GameObject dragClone;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
-
-    private GameObject dragClone;  // the clone being dragged
 
     void Awake()
     {
@@ -17,17 +15,13 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        // Create a clone of this UI element for dragging
+        // Create a clone for dragging
         dragClone = Instantiate(gameObject, canvas.transform);
         rectTransform = dragClone.GetComponent<RectTransform>();
-        canvasGroup = dragClone.GetComponent<CanvasGroup>();
-        if (canvasGroup == null)
-        {
-            canvasGroup = dragClone.AddComponent<CanvasGroup>();
-        }
-
-        canvasGroup.blocksRaycasts = false; // let drops detect it
         rectTransform.position = eventData.position;
+
+        canvasGroup = dragClone.AddComponent<CanvasGroup>();
+        canvasGroup.blocksRaycasts = false; // allow drop detection
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -42,7 +36,7 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     {
         if (dragClone != null)
         {
-            Destroy(dragClone); // always remove the temporary clone
+            Destroy(dragClone); // clone is only temporary, DropZone will spawn the real PlayfieldElement
         }
     }
 }

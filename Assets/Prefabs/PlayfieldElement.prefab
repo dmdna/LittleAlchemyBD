@@ -150,6 +150,7 @@ GameObject:
   - component: {fileID: 3347555662295410095}
   - component: {fileID: -3871787967028274295}
   - component: {fileID: 419249493745219487}
+  - component: {fileID: 129670268376980171}
   m_Layer: 5
   m_Name: PlayfieldElement
   m_TagString: Untagged
@@ -236,7 +237,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8582927473343905020}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed0553306c489b747a818b014477dbaa, type: 3}
   m_Name: 
@@ -253,3 +254,15 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &129670268376980171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8582927473343905020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0de127b1a269ae04eaac44fb7ed45e0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

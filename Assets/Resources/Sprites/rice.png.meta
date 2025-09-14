@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 1c61419301b1b8c40b2e4c244967e6a9
+guid: 9e3acf6b998da734c8ff64b627cfdec3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8207380672740664011
-    second: steam_0
-  - first:
-      213: -6937597978906831017
-    second: steam_1
-  - first:
-      213: -5241533908493117586
-    second: steam_2
-  - first:
-      213: 6952871464407447519
-    second: steam_3
+      213: 9135130128162984572
+    second: rice_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -135,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: steam_0
+      name: rice_0
       rect:
         serializedVersion: 2
-        x: 116
-        y: 227
-        width: 76
-        height: 285
+        x: 0
+        y: 10
+        width: 512
+        height: 492
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,74 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bc22d1fbc3976e170800000000000000
-      internalID: 8207380672740664011
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: steam_1
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 227
-        width: 76
-        height: 285
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7575ac82563b8bf90800000000000000
-      internalID: -6937597978906831017
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: steam_2
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 227
-        width: 75
-        height: 285
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e675a1a5ea45247b0800000000000000
-      internalID: -5241533908493117586
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: steam_3
-      rect:
-        serializedVersion: 2
-        x: 44
-        y: 0
-        width: 423
-        height: 222
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fd7b4fc42cf8d7060800000000000000
-      internalID: 6952871464407447519
+      spriteID: c729f1a937086ce70800000000000000
+      internalID: 9135130128162984572
       vertices: []
       indices: 
       edges: []
@@ -236,10 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      steam_0: 8207380672740664011
-      steam_1: -6937597978906831017
-      steam_2: -5241533908493117586
-      steam_3: 6952871464407447519
+      rice_0: 9135130128162984572
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
