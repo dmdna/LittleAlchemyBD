@@ -12,7 +12,7 @@ We have implemented Drag And Drop functionality to Culinary Alchemy. Players can
 
 ## Alchemy Rules
 
-Just like Little Alchemy, players of Culinary Alchemy can only progress upon success. A player will know they **succeed** when the elements that they choose to combine turn into a new element, which is then added to their inventory. If the players try to combine two elements, but they do not react, they have **failed** to create a new ingredient.
+Just like Little Alchemy, players of Culinary Alchemy can only progress upon success. A player will know they **succeed** when the elements that they choose to combine turn into a new element (accompanied by a unique sound effect), which is then added to their inventory. If the players try to combine two elements, but they do not react, they have **failed** to create a new ingredient.
 
 ### Validity Check
 
