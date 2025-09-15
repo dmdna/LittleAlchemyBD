@@ -10,6 +10,7 @@ public class HintUI : MonoBehaviour
     public Image inputAIcon;
     public Image inputBIcon;
     public Image outputIcon;
+    public Image hidePanel;
 
     [Header("Sprites")]
     public Sprite questionMarkSprite;
@@ -68,5 +69,19 @@ public class HintUI : MonoBehaviour
             inputBIcon.sprite = null;
             outputIcon.sprite = null;
         }
+    }
+
+    public void HidePanel()
+    {
+        HideUnhidePanel(false);
+    }
+    public void UnhidePanel()
+    {
+        HideUnhidePanel(true);
+    }
+
+    void HideUnhidePanel(bool hide)
+    {
+        hidePanel.gameObject.SetActive(hide);
     }
 }
