@@ -19,7 +19,7 @@ tomato,meat,guiso
 onion,egg,omelette
 meat,fire,grilled_meat
 meat,egg,albondigas
-wheat,egg,pasta
+flour,egg,pasta
 milk,egg,flan
 bread,meat,sandwich
 bread,avocado,avocado_toast
