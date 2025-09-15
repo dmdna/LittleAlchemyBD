@@ -61,6 +61,8 @@ public class HintUI : MonoBehaviour
             inputAIcon.sprite = Registry.Instance.elements[choice.a].icon;
             inputBIcon.sprite = Registry.Instance.elements[choice.b].icon;
             outputIcon.sprite = questionMarkSprite;
+            hints.SetActive(true);
+            deliciousTxt.SetActive(false);
         }
         else
         {
@@ -68,6 +70,8 @@ public class HintUI : MonoBehaviour
             inputAIcon.sprite = null;
             inputBIcon.sprite = null;
             outputIcon.sprite = null;
+            hints.SetActive(false);
+            deliciousTxt.SetActive(true);
         }
     }
 

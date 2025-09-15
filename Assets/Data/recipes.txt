@@ -11,7 +11,7 @@ tomato,tomato,salsa
 tortilla,cheese,quesadilla
 beans,rice,arroz_con_habichuelas
 avocado,tomato,guacamole
-tortilla,meat,taco
+tortilla,grilled_meat,taco
 tortilla,beans,bean_burrito
 rice,tomato,arroz_rojo
 rice,milk,arroz_con_leche
@@ -21,7 +21,7 @@ meat,fire,grilled_meat
 meat,egg,albondigas
 flour,egg,pasta
 milk,egg,flan
-bread,meat,sandwich
+bread,grilled_meat,sandwich
 bread,avocado,avocado_toast
 pasta,tomato,fideos_rojos
 egg,fire,fried_egg
